@@ -1,0 +1,16 @@
+{
+  "name": "@repo/redis-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@types/node": "^24.5.2",
+    "dotenv": "^17.2.2",
+    "redis": "^5.8.2"
+  }
+}

@@ -23,7 +23,7 @@ func main() {
 	for msg := range out {
 		log.Println("why am i closing",conn.Ping(ctx))
 		
-		if err := conn.Publish(ctx, "ticker", msg).Err(); err != nil {
+		if err := conn.Publish(ctx, "market.ticker.BTCUSDT.binance", msg).Err(); err != nil {
 			log.Println("publish error:", err)
 			} else {
 				fmt.Println("published:", string(msg))

@@ -1,7 +1,7 @@
 {
   "name": "go-service",
   "scripts": {
-    "dev": "go build -o /dist/main.go . && go run .",
-    "build": "go build -o /dist/main.go"
+    "dev": "go build -o dist/main.go . && go run .",
+    "build": "go build -o dist/main.go"
   }
 }

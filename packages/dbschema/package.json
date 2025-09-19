@@ -1,0 +1,20 @@
+{
+  "name": "@repo/dbschema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -b",
+    "migration:generate": "pnpm typeorm-ts-node-commonjs migration:generate src/migrations/Init -d src/config/data-source.ts",
+    "migration:run": "pnpm typeorm-ts-node-commonjs migration:run -d src/config/data-source.ts"
+  },
+  "dependencies": {
+    "@nestjs/typeorm": "^11.0.0",
+    "@types/node": "^24.5.2",
+    "dotenv": "^17.2.2",
+    "pg": "^8.16.3",
+    "typeorm": "^0.3.26"
+  }
+}
