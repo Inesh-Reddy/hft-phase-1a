@@ -1,7 +1,7 @@
 {
-  "name": "marketservice",
+  "name": "tradeservice",
   "scripts": {
     "dev": "go run main.go",
-    "build": "go build -o ../bin/market-service main.go"
+    "build": "go build -o ../bin/trade-service main.go"
   }
 }
