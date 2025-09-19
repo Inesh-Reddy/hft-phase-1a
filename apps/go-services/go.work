@@ -1,0 +1,9 @@
+go 1.24.4
+
+use (
+	../../packages/golib
+	./market-service
+	./orderbook-service
+	./ticker-service
+	./trade-service
+)
